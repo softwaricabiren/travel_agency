@@ -310,19 +310,19 @@ entry_confirm_password.place(relx=0.5, y=440, anchor=tkinter.CENTER)
 
 show_password_var = tkinter.BooleanVar()
 show_password_checkbox = ct.CTkCheckBox(master=f2, text="Show Password", variable=show_password_var,
-                                        command=toggle_password_visibility, fg_color=Primary, font=("Roboto", 14))
+                                        command=toggle_password_visibility, fg_color=Primary, font=("Roboto", 14), text_color="#4f4f4f")
 show_password_checkbox.place(relx=0.5, y=490, anchor=tkinter.CENTER)
 
 gender_var = tkinter.StringVar(value="Male")
 gender_label = ct.CTkLabel(master=f2, text="Gender:", font=("Roboto", 16, "bold"), text_color=color1)
-gender_label.place(relx=0.3, y=530, anchor=tkinter.CENTER)
+gender_label.place(relx=0.2, y=530, anchor=tkinter.CENTER)
 
-gender_male = ct.CTkRadioButton(master=f2, text="Male", variable=gender_var, value="Male", fg_color=Primary,
-                                font=("Roboto", 14))
+gender_male = ct.CTkRadioButton(master=f2, text="Male", variable=gender_var, value="Male", fg_color="#4f4f4f",
+                                font=("Roboto", 14), text_color="#4f4f4f")
 gender_male.place(relx=0.5, y=530, anchor=tkinter.W)
 
-gender_female = ct.CTkRadioButton(master=f2, text="Female", variable=gender_var, value="Female", fg_color=Primary,
-                                  font=("Roboto", 14))
+gender_female = ct.CTkRadioButton(master=f2, text="Female", variable=gender_var, value="Female", fg_color="#4f4f4f",
+                                  font=("Roboto", 14), text_color="#4f4f4f")
 gender_female.place(relx=0.5, y=530, anchor=tkinter.E)
 
 submit_button_reg = ct.CTkButton(master=f2, text="Register", width=100, height=40, fg_color="#00adef", text_color=framefg,
